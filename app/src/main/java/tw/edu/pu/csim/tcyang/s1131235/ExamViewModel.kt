@@ -22,9 +22,9 @@ class ExamViewModel : ViewModel() {
         screenHeightPx = height
     }
 
-    // 您的系級和姓名資訊 (請修改成您的資訊)
+    // 您的系級和姓名資訊
     val studentInfo = """
-        瑪利亞基金會服務大考驗
-        作者:資管二B 楊承智
-    """
+    瑪利亞基金會服務大考驗
+    作者:資管二B 楊承智
+""".trimIndent()
 }
