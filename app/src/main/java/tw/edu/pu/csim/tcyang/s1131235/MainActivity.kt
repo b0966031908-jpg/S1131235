@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // 隱藏上方狀態列及下方巡覽列
+        // 隱藏上方狀態列及下方巡覽列 (實現全螢幕沉浸模式)
         hideSystemUI()
 
         enableEdgeToEdge()
@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
     /**
      * 隱藏系統 UI（狀態列和導覽列），實現沉浸式全螢幕。
      */
-    private fun hideSystemUI() {
+    fun hideSystemUI() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             // Android 11 (API 30) 及更高版本
             window.setDecorFitsSystemWindows(false)
